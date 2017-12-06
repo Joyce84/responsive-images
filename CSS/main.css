@@ -1,0 +1,60 @@
+/* Image Attribution
+
+All the images used in this page belongs to:
+Markus Spiske - https://500px.com/markusspiske
+Yinan Chen - https://500px.com/webmaster85
+Fahim Akhter - https://500px.com/fahimakhter
+
+*/
+
+
+/*question: media queries override picture elements when page width is between*/
+
+
+ul {
+    list-style: none;
+}
+
+li {
+    float: left;
+    margin-top: 2.5%;
+}
+
+img {
+    max-width:90%;
+    transition: transform 0.9s ease-in-out;
+}
+
+img:hover {
+    transform: scale(1.2);
+    z-index: 200;
+}
+
+/* 1 column  */
+@media screen and (max-width: 599px) {
+
+    li {
+        width: 100%;
+    }
+}
+
+/* 2 columns */
+@media screen and (min-width: 600px) {
+    li {
+        width: 50%;
+    }
+}
+
+/* 4 columns */
+@media screen and (min-width: 1200px) {
+    li {
+        width: 25%;
+    }
+}
+
+footer {
+    clear:both;
+    text-align: center;
+    padding-top: 50px;
+    color: gray;
+}
